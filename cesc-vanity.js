@@ -35,7 +35,7 @@ const run = async (id, match) => {
 	  //console.log(mnemonic);
 	  let bip44 = await HdAddGen.withMnemonic(mnemonic.mnemonic,false,"CESC")
 	  
-	  let addresses = await bip44.generate(100)
+	  let addresses = await bip44.generate(1)
 	  
 	  addresses.forEach((address)=>{
 		  const account = {
